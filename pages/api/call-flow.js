@@ -1,4 +1,5 @@
 export default async function handler(req, res) {
+  console.log(req);
   if (req.method !== 'POST') return res.status(405).end();
   console.log(req);
   const SALESFORCE_ACCESS_TOKEN = process.env.SALESFORCE_ACCESS_TOKEN;
